@@ -101,7 +101,7 @@ $(document).ready(function() {
 
     var view_type = localStorage.getItem('search_view_type');
     if (!view_type) {
-        view_type = 'list';
+        view_type = 'grid';
     }
     $('.search-view-type-' + view_type).click();
 });
