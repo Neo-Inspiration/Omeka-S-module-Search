@@ -77,6 +77,8 @@ input#q[name="q"] {
     border-left: 0px;
 }
 
+input#q[name="q"]:focus { outline: noen; }
+
 .search-results > .noresults {
   text-align: center;
 }
