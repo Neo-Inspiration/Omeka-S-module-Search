@@ -104,4 +104,15 @@ $(document).ready(function() {
         view_type = 'grid';
     }
     $('.search-view-type-' + view_type).click();
+
+    // set form tag class according to search result
+    var noResults = $('.search-results-wrapper>.search-results>.noresults').length > 0;
+    var notSearched = $('.search-results-wrapper').length == 0;
+    if (noResults) {
+        $('.search-results-wrapper').siblings('form').addClass('no-results');
+    }
+
+    if (notSearched) {
+        $('input#q').parents('form').addClass('not-searched');
+    }
 });

@@ -63,3 +63,91 @@
   min-width: 200px;
   max-width: 200px;
 }
+
+
+/* @edited  ----- Forms -----  */
+.field { justify-content: right; }
+.field > .field-meta { width: unset !important; }
+.field > .inputs { width: unset !important; }
+
+input#q[name="q"] {
+    border-bottom: 1px solid #dedede;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.search-results > .noresults {
+  text-align: center;
+}
+
+form.no-results .field, form.not-searched .field {
+  justify-content: center;
+  margin: 8% 0 10px 0;
+}
+
+form.no-results .field-meta, form.not-searched .field-meta {
+  display: none;
+}
+
+form.no-results .inputs, form.not-searched .inputs {
+  padding: 0;
+  width: 40%;
+}
+
+form.no-results input#q, form.not-searched input#q {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  height: auto;
+}
+
+/* @edited  ----- search results -----  */
+
+aside.search-facets {
+    flex:3;
+    margin-right: 4em;
+}
+
+aside.search-facets  > h2 { display: none; }
+
+aside.search-facets li.search-facet {
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+
+.search-results {
+    position: relative;
+    flex:6;
+}
+.search-results > h3 { margin: 0; }
+.search-results > .search-results-header { justify-content: flex-end; }
+.search-results > .search-results-header > div { display: none; }
+.search-results > .search-results-header > div.search-results-count { display: block; }
+.search-results > .resource-list.grid { justify-content: flex-start; }
+.search-results > .resource-list.grid > .resource { flex-basis: 50%; }
+.search-results > .resource-list.grid > .resource > .resource-thumbnail {
+  min-width: unset;
+  max-width: unset;
+}
+.search-results > .resource-list.grid > .resource > .resource-thumbnail > a > img { width: 100%; }
+.search-results > .resource-list + nav.pagination { display: none; }
+
+.search-results .items.resource {
+  padding: 0 .625%;
+  position: relative;
+}
+
+.search-results .items.resource > .resource-metadata  {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.search-results .items.resource > .resource-metadata > h4 > a {
+  color: #FFF;
+  font-size: 35px;
+  line-height: 1.1;
+}
+
+.search-results .items.resource > .resource-metadata > h4 > a:hover { text-decoration: none; }
