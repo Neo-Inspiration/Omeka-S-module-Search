@@ -70,14 +70,14 @@
 .field > .field-meta { width: unset !important; }
 .field > .inputs { width: unset !important; }
 
-input#q[name="q"] {
+input#q {
     border-bottom: 1px solid #dedede;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
 }
 
-input#q[name="q"]:focus { outline: noen; }
+input#q:focus { outline: noen; }
 
 .search-results > .noresults {
   text-align: center;
