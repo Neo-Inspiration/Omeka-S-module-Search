@@ -71,10 +71,11 @@
 .field > .inputs { width: unset !important; }
 
 input#q {
-    border-bottom: 1px solid #dedede;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
+  border-bottom: 1px solid #dedede;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  outline: none;
 }
 
 input#q:focus { outline: noen; }
@@ -107,20 +108,20 @@ form.no-results input#q, form.not-searched input#q {
 /* @edited  ----- search results -----  */
 
 aside.search-facets {
-    flex:3;
-    margin-right: 4em;
+  flex:3;
+  margin-right: 4em;
 }
 
 aside.search-facets  > h2 { display: none; }
 
 aside.search-facets li.search-facet {
-  padding-bottom: 20px;
-  border-bottom: 1px solid;
+padding-bottom: 20px;
+border-bottom: 1px solid;
 }
 
 .search-results {
-    position: relative;
-    flex:6;
+  position: relative;
+  flex:6;
 }
 .search-results > h3 { margin: 0; }
 .search-results > .search-results-header { justify-content: flex-end; }
